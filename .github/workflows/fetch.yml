@@ -22,6 +22,7 @@ jobs:
       - run: bundle install
       - run: npm install
       - run: gem install signet -v 0.19.0
+      - run: gem install google-cloud-core -v 1.7.1
       - run: gem install fastlane -v '2.219.0'
       - run: node Sources/check_status.js
         env:
